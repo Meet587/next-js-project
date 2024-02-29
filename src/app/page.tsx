@@ -1,7 +1,19 @@
+import FeaturedCourses from "@/components/FeaturedCourses";
+import HeroSection from "@/components/HeroSection"
+import Instructors from "@/components/Instructors";
+import MusicSchoolTestimonials from "@/components/TestimonialCards";
+import UpcomingWebinar from "@/components/UpcomingWebinar";
+import WhyChoosUs from "@/components/WhyChoosUs";
+
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-between p-24">
-      main
-    </div>
+    <main className="min-h-screen bg-black/[0.96] antialiased bg-grid-white/[0.02]">
+      <HeroSection />
+      <FeaturedCourses />
+      {/* <WhyChoosUs /> */}
+      <MusicSchoolTestimonials />
+      <UpcomingWebinar />
+      <Instructors />
+    </main>
   );
 }
